@@ -15,7 +15,7 @@
           background-color: #1c1c24;
           margin: 0px;
       }
-      section {
+      .section1 {
           grid-area: 1 / 1 / 5 / 4;
           background-color: #1c1c24;
       }
@@ -70,6 +70,10 @@
     color: #f7b085;
     font-size: 40px;
   }
+  .section2 {
+    grid-area: 20 / 7 / 25 / 19;
+    background-color: #f7ab85;
+  }
   @media only screen and (max-width: 700px) {
       section {
           grid-area: 1 / 1 / 3 / 7;
@@ -101,11 +105,14 @@
       p {
        font-size: 16px; 
       }
+      .section2 {
+        display: none;
+      }
   }
     </style>
   </head>
   <body>
-    <section>
+    <section class="section1">
       <a href="index.html">
         <img src="logo2.0.PNG" alt="Logo" class="logo">
       </a>
@@ -130,5 +137,7 @@
         Jmenuji se Michal Koranda, je mi 16 let a jsem momentálně studuji obor informační technologie na střední škole INFIS v Plzni. Jsem chytrý, dokážu logicky myslet a rád se učím novým věcem. Baví mě hraní počítačových her, poslouchání hudby, sledování seriálů a filmů. Mezi mé oblíbené počítačové hry patří hlavně příběhové hry pro jednoho hráče jako například "God of War", "Death Stranding", "Red Dead Redemtion 2" apod., ale občas si zahraji se svými kamarády i hry pro více hráčů. Mezi hry, které hraji s kamarády patří např.: "League of Legends", "Lethal Company" a "Counter-Strike". Dále se také již pár let věnuji 3D tisku. Vlastním 3D tiskárnu Ender 3, na které si tisknu buď okrasné věci, nebo tisknu náhradní plastové díly, pokud je dokážu vymodelovat. Jsem také fandou Airsoftu a rád bych někdy zašel s někým na nějakou Airsoft akci.
       </p>
     </main>
+    <section class="section2">
+    </section>
   </body>
 </html>
