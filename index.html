@@ -6,70 +6,84 @@
     <link rel="icon" href="icon.png">
     <style>
         body {
-          color: #FFFFFF;
-          background-color: #1c1c24;
+          display: grid;
+          grid-template-columns: repeat(25, 4%);
+          grid-template-rows: repeat(25, 4%);
+          width: 100vw;
+          height: 100vh;
+        }
+        section {
+            grid-area: 1 / 1 / 4 / 4;
+            background-color: #f7ab85;
         }
         header {
           font-family: arial;
           font-weight: bold;
-          color: #FFFFFF;
           text-decoration: none;
           background-color: #f7ab85;
-        }
-        .nadpis2 {
-          color: #f7b085;
-          text-align: center;
-          font-size: 55px;
-        }
-        .polozky {
-          list-style-type: none;
-          margin-left: 1500px;
-          font-size: 22px;
-        }
-        p {
-          font-size: 30px;
-        }
-        .hlavni_text {
-          color: #f7ab85;
-          font-family: georgian;
-          margin-left: 120px;
         }
         h1 {
           text-align: center;
           font-size: 75px;
           color: #1c1c24;
         }
-        a {
+        menu {
+          grid-area: 4 / 1 / 26 / 4;
+          background-color: coral;
+          margin: 0px;
+          list-style-type: none;
+          padding: 10%;
+        }
+        li {
+          text-decoration: none;
+          text-align: center;
+          padding: 10%;
+          border: 2px solid;
+          border-radius: 15px;
+          margin-top: 10%;
+          margin-bottom: 10%;
           color: #1c1c24;
+        }
+        main {
+          grid-area: 6 / 11 / 19 / 19;
+        }
+        p {
+          font-size: 30px;
+          color: #f7ab85;
+          font-family: georgian;
+        }
+        h2 {
+          color: #f7b085;
+          font-size: 40px;
         }
     </style>
   </head>
   <body>
-    <header>
+    <section>
       <a href="index.html">
-        <img src="logo2.0.PNG" alt="Logo" width="140" height="140">
+        <img src="logo2.0.PNG" alt="Logo">
       </a>
+    </section>
+    <header>
       <a href="index.html" style="text-decoration: none; color: #1c1c24">
         <h1>Michal Koranda</h1>
       </a>
-      <nav>
-        <ul>
-          <li class="polozky">
+    </header>
+    <menu>
+          <li>
             <a href="index.html" style="text-decoration: none; color: #1c1c24">Úvod</a>
           </li>
-          <li class="polozky">
+          <li>
             <a href="Strana_B.html" style="text-decoration: none; color: #1c1c24">O mně</a>
           </li>
-          <li class="polozky">
+          <li>
             <a href="Strana_C.html" style="text-decoration: none; color: #1c1c24">O škole</a>
           </li>
-        </ul>
-      </nav>
-    </header>
+    </menu>
     <main>
-      <h2 class="nadpis2">Úvod</h2>
-      <p class="hlavni_text">
-        Jmenuji se Michal Koranda, je mi 15 let a studuji na škole Informatiky a finančních služeb v Plzni. Jsem humorista a hráč počítačových her.
+      <h2>Úvod</h2>
+      <p>
+        Jmenuji se Michal Koranda, je mi 16 let a studuji na střední škole Informatiky a finančních služeb v Plzni, v oboru informační technologie. Mé zájmy jsou počítačové hry, airsoft a 3D tisk.
       </p>
     </main>
   </body>
