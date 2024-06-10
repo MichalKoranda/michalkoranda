@@ -43,20 +43,23 @@
     grid-area: 5 / 1 / 26 / 4;
     background-image: linear-gradient(rgb(252, 227, 138) 0%, rgb(243, 129, 129) 100%);
     margin: 0px;
-    list-style-type: none;
     padding: 10%;
   }
-  li {
-    text-decoration: none;
-    text-align: center;
-    padding: 10%;
+  button {
+    width: 9vw;
+    height: 6vh;
     border: 2px solid;
     border-radius: 15px;
     margin-top: 10%;
     margin-bottom: 10%;
     color: #1c1c24;
+    background:none;
     font-family: arial;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   main {
     grid-area: 6 / 6 / 22 / 19;
@@ -79,14 +82,15 @@
       height: 80%;
       }
       header {
-          grid-area: 1 / 7 / 3 / 26;
+          grid-area: 1 / 6 / 4 / 26;
       }
       menu {
-          grid-area: 3 / 1 / 26 / 7;
+          grid-area: 4 / 1 / 26 / 6;
       }
-      li {
+      button {
         margin-top: 20%;
         margin-bottom: 20%;
+        width: 14vw;
       }
       h1 {
         font-size: 33px;
@@ -114,15 +118,15 @@
         <h1>Michal Koranda</h1>
     </header>
     <menu>
-          <li>
-            <a href="index.html" style="text-decoration: none; color: #1c1c24">Úvod</a>
-          </li>
-          <li>
-            <a href="Strana_B.html" style="text-decoration: none; color: #1c1c24">O mně</a>
-          </li>
-          <li>
-            <a href="Strana_C.html" style="text-decoration: none; color: #1c1c24">O škole</a>
-          </li>
+            <a href="index.html" style="text-decoration: none; color: #1c1c24">
+            <button>Úvod</button>
+            </a>
+            <a href="Strana_B.html" style="text-decoration: none; color: #1c1c24">
+            <button>O mně</button>
+            </a>
+            <a href="Strana_C.html" style="text-decoration: none; color: #1c1c24">
+            <button> O škole</button>
+            </a>
     </menu>
     <main>
       <h2>Úvod</h2>
