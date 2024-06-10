@@ -93,11 +93,11 @@
   }
   @media only screen and (max-width: 1000px) {
     .section2 {
-      display: none;
+        grid-area: 21 / 6 / 26 / 10;
     }
-      .skola {
-        display: none;
-      }
+    .skola {
+        grid-area: 21 / 6 / 26 / 10;
+    }
   }
   @media only screen and (max-width: 805px) {
       .section1 {
@@ -107,11 +107,21 @@
       width: 80%;
       height: 80%;
       }
+      .section2 {
+        grid-area: 15 / 9 / 19 / 17;
+        width: 35vw;
+        height: 25vh;
+    }
+    .skola {
+        grid-area: 15 / 9 / 19 / 17;
+        width: 35vw;
+        height: 25vh;
+    }
       header {
           grid-area: 1 / 6 / 4 / 26;
       }
       menu {
-          grid-area: 4 / 1 / 26 / 6;
+          grid-area: 5 / 1 / 26 / 6;
       }
       button {
         margin-top: 20%;
