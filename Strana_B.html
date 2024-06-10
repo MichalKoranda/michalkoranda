@@ -94,19 +94,29 @@
   }
   @media only screen and (max-width: 1000px) {
     .section2 {
-      display: none;
+        grid-area: 22 / 6 / 26 / 10;
     }
-      .me {
-        display: none;
-      }
+    .me {
+        grid-area: 22 / 6 / 26 / 10;
+    }
   }
   @media only screen and (max-width: 805px) {
       .section1 {
           grid-area: 1 / 1 / 3 / 7;
       }
       .logo {
-      width: 80%;
-      height: 80%;
+        width: 80%;
+        height: 80%;
+      }
+      .section2 {
+        grid-area: 18 / 9 / 22 / 17;
+        width: 35vw;
+        height: 25vh;
+      }
+      .me {
+        grid-area: 18 / 9 / 22 / 17;
+        width: 35vw;
+        height: 25vh;
       }
       header {
           grid-area: 1 / 6 / 4 / 26;
